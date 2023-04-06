@@ -79,6 +79,7 @@ def delete(id):
     cur.execute("DELETE FROM contacts WHERE id = %s", (id,))
     mysql.connection.commit()
     cur.close()
+    flash("Contacto eliminado correctamente")
     return redirect(url_for("home"))
 
 

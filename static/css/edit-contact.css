@@ -1,9 +1,7 @@
-/* flecha de regresar */
-.back i {
-  font-size: 3rem;
-  color: black;
-  margin: 15px;
-  padding: 0 5px;
+.back i:hover {
+  color: red;
+  box-shadow: 0 0 2px rgb(158, 158, 158);
+  transition: all ease-in 0.3s;
 }
 
 /* formulario */
@@ -44,4 +42,12 @@
   outline: none;
   background: #008a93;
   color: white;
+}
+
+/* botón de cerrar */
+.back i {
+  font-size: 1.7rem;
+  color: black;
+  margin: 15px;
+  padding: 0 5px;
 }

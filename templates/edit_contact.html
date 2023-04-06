@@ -1,14 +1,13 @@
 {% extends 'layout.html' %} {% block title %} edit contact {% endblock %} {%
 block body %}
 
-<div class="back d-flex align-items-center ">
-  <a href="/">
-    <i class="bi bi-arrow-left-short"></i>
-  </a>
-</div>
-
 <form id="edit-contact-form" action="/update/{{contact[0]}}" method="POST">
   <div class="d-block">
+    <span class="back d-flex justify-content-end">
+      <a href="/">
+        <i class="bi bi-x"></i>
+      </a>
+    </span>
     <h3>Editar información</h3>
     <input
       class="form-control"

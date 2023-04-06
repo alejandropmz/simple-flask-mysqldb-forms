@@ -3,14 +3,21 @@ body %}
 
 <!-- validación de mensaje de creado correctamente -->
 {% with mensajes = get_flashed_messages() %} {% if mensajes %} {% for mensaje in
-mensajes %}
-<div class="create-message">
-  <div class="delete d-flex justify-content-end">
+mensajes %} {% if mensaje == "Contacto creado correctamente" %}
+<div class="create-delete-message create-message">
+  <div class="close d-flex justify-content-end">
+    <i id="close-button" class="bi bi-x"></i>
+  </div>
+  <h3>{{mensaje}}</h3>
+</div>
+{% elif mensaje == "Contacto eliminado correctamente" %}
+<div class="create-delete-message delete-message">
+  <div class="close d-flex justify-content-end">
     <i class="bi bi-x"></i>
   </div>
   <h3>{{mensaje}}</h3>
 </div>
-{% endfor %} {% endif %} {% endwith %}
+{% endif %} {% endfor %} {% endif %} {% endwith %}
 
 <!-- fourmulario -->
 <form action="/create" method="POST">
@@ -35,7 +42,7 @@ mensajes %}
       placeholder="Escriba su correo electrónico"
     />
     <button id="send-button" class="btn btn-outline-*" type="submit">
-      Enviar información
+      Agregar contacto
     </button>
   </div>
 </form>
