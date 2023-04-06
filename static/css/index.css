@@ -1,0 +1,87 @@
+/* formulario */
+
+#index-form {
+  border-radius: 5px;
+  border: solid #008a93 2px;
+  margin: 120px auto 50px;
+  padding: 20px 5px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+#index-form input {
+  margin: 3px 0;
+  font-size: 0.9rem;
+}
+
+#index-form button {
+  margin: 10px 0;
+}
+
+#send-button {
+  border: 2px solid #008a93;
+  color: #008a93;
+}
+
+#send-button:hover {
+  background: #008a93;
+  border: 2px solid white;
+  color: white;
+}
+
+#send-button:active,
+#send-button:focus {
+  border: none;
+  outline: none;
+  background: #008a93;
+  color: white;
+}
+
+/* tabla de contactos */
+
+.tabla {
+  margin: auto;
+  padding: 10px 0;
+}
+
+#info-table th {
+  background-color: #03305a;
+  color: white;
+  font-size: 0.9rem;
+  border: solid 1px black;
+  padding: 6px;
+  text-align: center;
+}
+
+#info-table td {
+  border: solid 1px black;
+  font-size: 0.8rem;
+  padding: 4px;
+  max-width: 260px;
+  overflow: auto;
+}
+
+/* botones */
+
+/* boton de editar */
+
+#edit-home-button {
+  background-color: #03305a;
+  color: white;
+}
+
+#edit-home-button:hover {
+  background-color: #032340;
+}
+
+/* botón de eliminar  */
+
+#delete-button {
+  background-color: #d90034;
+  color: white;
+}
+
+#delete-button:hover {
+  background-color: #a9082e;
+}

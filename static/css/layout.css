@@ -1,25 +1,8 @@
+@import url('index.css');
+@import url('edit-contact.css');
+
 * {
   padding: 0;
   margin: 0;
-}
-
-/* formulario */
-
-#edit-contact-form div {
-  border-radius: 5px;
-  border: solid red 2px;
-  margin: 200px auto;
-  padding: 20px 5px;
-  text-align: center;
-  width: 100%;
-  max-width: 450px;
-}
-
-#edit-contact-form div input {
-  margin: 3px 0;
-}
-
-#edit-contact-form div button {
-  margin: 10px 0;
 }
 

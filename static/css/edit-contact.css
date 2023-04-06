@@ -1,0 +1,47 @@
+/* flecha de regresar */
+.back i {
+  font-size: 3rem;
+  color: black;
+  margin: 15px;
+  padding: 0 5px;
+}
+
+/* formulario */
+
+#edit-contact-form div {
+  border-radius: 5px;
+  border: solid #008a93 2px;
+  margin: 170px auto;
+  padding: 20px 5px;
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+#edit-contact-form div input {
+  margin: 3px 0;
+  font-size: 0.9rem;
+}
+
+#edit-contact-form div button {
+  margin: 10px 0;
+}
+
+#edit-button {
+  border: 2px solid #008a93;
+  color: #008a93;
+}
+
+#edit-button:hover {
+  background: #008a93;
+  border: 2px solid white;
+  color: white;
+}
+
+#edit-button:active,
+#edit-button:focus {
+  border: none;
+  outline: none;
+  background: #008a93;
+  color: white;
+}
