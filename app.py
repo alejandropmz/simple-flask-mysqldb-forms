@@ -44,7 +44,7 @@ def create():
 @app.route("/edit/<string:id>")
 def edit(id):
     cur = mysql.connection.cursor()
-    cur.execute("SELECT * FROM contacts WHERE id = %s", (id))
+    cur.execute("SELECT * FROM contacts WHERE id = %s", (id,))
     data = cur.fetchall()
     cur.close()
     return render_template("edit_contact.html", contact=data[0])
