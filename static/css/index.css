@@ -3,7 +3,7 @@
 #index-form {
   border-radius: 5px;
   border: solid #008a93 2px;
-  margin: 120px auto 50px;
+  margin: 60px auto 50px;
   padding: 20px 5px;
   width: 100%;
   max-width: 450px;
@@ -84,4 +84,37 @@
 
 #delete-button:hover {
   background-color: #a9082e;
+}
+
+/* No hay registros */
+
+.no-register {
+  background-color: #a9082e;
+  color: white;
+  padding: 20px;
+}
+
+/* Mensajes de creado y eliminado */
+
+.create-message {
+  background: #008a93;
+  color: white;
+  margin: 5px auto;
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.create-message h3 {
+  margin-bottom: 45px;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.delete i {
+  font-size: 1.6rem;
+  margin-right: 15px;
 }

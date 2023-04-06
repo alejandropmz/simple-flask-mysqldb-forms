@@ -1,11 +1,18 @@
 {% extends 'layout.html' %} {% block title %} home page {% endblock %} {% block
 body %}
 
-<!-- Formularios -->
+<!-- validación de mensaje de creado correctamente -->
 {% with mensajes = get_flashed_messages() %} {% if mensajes %} {% for mensaje in
 mensajes %}
-<h1>{{mensaje}}</h1>
+<div class="create-message">
+  <div class="delete d-flex justify-content-end">
+    <i class="bi bi-x"></i>
+  </div>
+  <h3>{{mensaje}}</h3>
+</div>
 {% endfor %} {% endif %} {% endwith %}
+
+<!-- fourmulario -->
 <form action="/create" method="POST">
   <div id="index-form" class="d-block">
     <h3>Añadir contacto</h3>
@@ -53,15 +60,21 @@ mensajes %}
       <td>{{contact[3]}}</td>
       <td>
         <a href="/edit/{{contact[0]}}"
-          ><button id="edit-home-button" class="btn btn-outline-*">Editar</button></a
+          ><button id="edit-home-button" class="btn btn-outline-*">
+            Editar
+          </button></a
         >
         <a href="/delete/{{contact[0]}}"
-          ><button id="delete-button" class="btn btn-outline-*">Eliminar</button></a
+          ><button id="delete-button" class="btn btn-outline-*">
+            Eliminar
+          </button></a
         >
       </td>
     </tr>
     {% endfor %} {% else %}
-    <h1>No hay registros que mostrar</h1>
+    <div class="no-register">
+      <h3>No hay registros que mostrar</h3>
+    </div>
     {% endif %}
   </table>
 </div>
