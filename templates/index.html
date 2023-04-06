@@ -17,11 +17,27 @@ mensajes %} {% if mensaje == "Contacto creado correctamente" %}
   </div>
   <h3>{{mensaje}}</h3>
 </div>
+{% elif mensaje == "Contacto editado correctamente" %}
+<div class="create-delete-message edit-message">
+  <div class="close d-flex justify-content-end">
+    <i id="close-button" class="bi bi-x"></i>
+  </div>
+  <h3>{{mensaje}}</h3>
+</div>
 {% endif %} {% endfor %} {% endif %} {% endwith %}
 
+<!-- añadir contacto -->
+<div id="add-contact" class="d-none">
+  <i class="bi bi-person-plus"></i>
+  <p id="add-text">Añadir contacto</p>
+</div>
+
 <!-- fourmulario -->
-<form action="/create" method="POST">
+<form id="index-form-father" class="" action="/create" method="POST">
   <div id="index-form" class="d-block">
+    <div class="close-form d-flex justify-content-end">
+      <i id="close-form-button" class="bi bi-x"></i>
+    </div>
     <h3>Añadir contacto</h3>
     <input
       class="form-control"

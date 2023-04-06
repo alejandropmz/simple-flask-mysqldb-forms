@@ -1,9 +1,34 @@
+/* añadir contacto */
+
+#add-contact * {
+  margin: 0 5px;
+}
+
+#add-contact {
+  border-radius: 5px;
+  border: solid #03305a 2px;
+  background-color: #03305a;
+  color: white;
+  margin: 10px auto 5px;
+  padding: 0 10px;
+  width: 100%;
+  max-width: 450px;
+}
+
+#add-contact:hover {
+  background-color: #032340;
+}
+
+#add-text {
+  margin: 0;
+}
+
 /* formulario */
 
 #index-form {
   border-radius: 5px;
   border: solid #008a93 2px;
-  margin: 60px auto 50px;
+  margin: 70px auto 50px;
   padding: 20px 5px;
   width: 100%;
   max-width: 450px;
@@ -36,6 +61,12 @@
   outline: none;
   background: #008a93;
   color: white;
+}
+
+.close-form i {
+  font-size: 1.7rem;
+  color: black;
+  padding: 0 5px;
 }
 
 /* tabla de contactos */
@@ -97,6 +128,18 @@
 /* Mensajes de creado y eliminado */
 
 .create-message {
+  border-radius: 5px;
+  background: #008a93;
+  color: white;
+  margin: 5px auto;
+  padding: 5px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* El resto de css está en edit-contact */
+.edit-message {
   border-radius: 5px;
   background: #008a93;
   color: white;

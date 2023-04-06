@@ -1,6 +1,15 @@
 {% extends 'layout.html' %} {% block title %} edit contact {% endblock %} {%
 block body %}
-
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <div class="create-delete-message edit-message">
+    <div class="close d-flex justify-content-end">
+      <i id="close-button" class="bi bi-x"></i>
+    </div>
+    <h3>{{mensaje}}</h3>
+  </div>
+  {% endif %}
+{% endwith %}
 <form id="edit-contact-form" action="/update/{{contact[0]}}" method="POST">
   <div class="d-block">
     <span class="back d-flex justify-content-end">

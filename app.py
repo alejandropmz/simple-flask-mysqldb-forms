@@ -69,6 +69,7 @@ def update(id):
     )
     mysql.connection.commit()
     cur.close()
+    flash("Contacto editado correctamente")
     return redirect(url_for("home"))
 
 
